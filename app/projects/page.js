@@ -7,13 +7,13 @@ import styles from "@/app/page.module.css";
 
 const projects = () => {
   return (
-    <div className={styles.text}>
+    <div className={styles.text }>
       <h2>Projects:</h2>
       <div className={styles.flex}>
         <div>
           <h3>HTTP request</h3>
           <p>A simple modal window created using HTML, CSS, and JS</p>
-          <p><a href="https://github.com/Genofff/HTTP_request">GitHub →</a></p>
+          <p><a href="https://github.com/Genofff/HTTP_request">GitHubs →</a></p>
           
           <Image
             src={HTTP_request}
