@@ -97,7 +97,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -105,7 +105,136 @@
 }
 
 .logo {
-  position: relative;
+  color: black;
+  /*transform: scale(2);*/
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  padding: auto;
+}
+
+.btn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #ffffff;
+  background: #636263;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #8c8c8c;
+  text-decoration: none;
+}
+
+.nav {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  display: flex;
+  gap: 15px;
+}
+
+.photo {
+  width: auto;
+  height: 350px;
+  float: left;
+  margin-right: 10px;
+  shape-outside: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.text {
+  margin-top: 30px;
+  padding: 150px;
+  padding-top: 0;
+}
+.text h2 {
+  font-weight: 650;
+  margin-bottom: 0.7rem;
+}
+.text h2 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 80px;
+}
+.text h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.text p li {
+  margin: 10px 0px 10px 0px;
+  opacity: 0.6;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 30ch;
+}
+.text ul {
+  list-style-type: none;
+}
+.text li {
+  filter: brightness(50%);
+}
+.text p {
+  margin-bottom: 15px;
+  filter: brightness(50%);
+}
+
+.text p:last-child {
+  margin-bottom: 0;
+}
+.text a:link {
+  color: #a68900;
+}
+
+.text a:visited {
+  color: #bfa730;
+}
+
+.text a:focus {
+  border-bottom: 1px solid;
+  background: #ffde40;
+}
+
+.text a:hover {
+  border-bottom: 1px solid;
+  background: #fff073;
+}
+
+.text a:active {
+  background: #a68900;
+  color: #fff073;
+}
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+}
+.container p {
+  margin-top: 15px;
+}
+.photo_2 {
+  width: 500px;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.flex p {
+  margin: 10px;
+}
+.flex_2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
