@@ -1,95 +1,51 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
-export default function Home() {
+import Image from "next/image";
+import I from "./photo/I.png";
+import styles from "./page.module.css";
+import Button from "./Button";
+const Home = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <div className={styles.text}>
+      <h2>About:</h2>
+      <Image src={I} alt="I" className={styles.photo} />
+      <h3>
+        Hello! My name is Karina Hryshko, and I am passionate about building and
+        designing products for startups.
+      </h3>
+      <p>
+        As a software developer and a dedicated enthusiast of tech startups, I
+        have a strong drive to create and launch digital products. I always
+        maintain a growth mindset, focusing on user-centric designs and adopting
+        a problem-solving approach.
+      </p>
+
+      <p>
+        Throughout my career, I have written code to craft engaging experiences,
+        while also exploring the human aspect of these applications through
+        design.
+      </p>
+      <ul>
+        <h3>My technical skill set includes:</h3>
+        <li>HTML / CSS: 5 years of experience</li>
+        <li>JavaScript: 3 years of experience</li>
+        <li>Ruby and Ruby on Rails: 2 years of experience</li>
+        <li>PHP and Laravel: 3 years of experience</li>
+        <li>User Interface Design: 5 years of experience</li>
+      </ul>
+      <p>
+        In my early years as a developer, I acquired knowledge in various areas,
+        broadening my horizons. However, I soon realized the importance of
+        specializing in specific technologies while also staying up to date with
+        emerging ones. This approach allows me to work more efficiently and
+        effectively.
+      </p>
+      <div className={styles.container}>
+        <h3>Projects:</h3>
+        <Button title="Projects" link="/projects">
+          projects
+        </Button>
       </div>
+    </div>
+  );
+};
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+export default Home;
